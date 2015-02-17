@@ -1,0 +1,54 @@
+
+        <header class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <div class="navbar-header col-sm-3 col-md-2">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" ng-click="isCollapsed = !isCollapsed">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <div>                              
+                            <a href="index.html" role="button" class="navbar-brand">
+                              <i class="fa fa-home fa-lg"></i> Droid Linguist
+                            </a>
+                            <small>
+                                <a ng-href="http://github.com/tinesoft/droidlinguist/blob/v{{BUILD_OPTIONS.version}}-release/CHANGELOG.md">
+                                    v{{BUILD_OPTIONS.version}}
+                                </a>
+                            </small>
+                        </div>
+                    </div>
+                    <nav class="navbar-collapse  col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2" uib-collapse="isCollapsed">
+                        <translation-toolbar ng-if="isTranslateStep"></translation-toolbar>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div ui-view="content" id="main-content" class="content" role="main"></div>
+
+        <footer class="footer footer-sticky" role="footer" >
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <p class="copyright" ng-bind-html="BUILD_OPTIONS.copyright"></p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <ul class="links">
+                      <li><a href="https://github.com/tinesoft/droidlinguist/blob/master/LICENSE " target="_blank">MIT License</a></li>
+                      <li><a href="https://github.com/tinesoft/droidlinguist/issues?state=open"    target="_blank">Open Issues</a></li>
+                      <li><a href="http://developer.android.com/guide/topics/resources/string-resource.html" target="_blank">Android Strings Resource</li>
+                      <!--
+                      <li><a href ui-sref="privacy">Privacy Policy</a></li>
+                      <li><a href ui-sref="tos">Terms of Service</a></li>
+                      -->
+                  </ul> 
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <p class="designed-and-coded">Designed and Coded with <i class="fa fa-heart heart"></i> by <a href="https://www.linkedin.com/in/kondotine/en" target="_blank">Tine Kondo</a></p>                  
+                </div>
+              </div>
+            </div>
+        </footer>

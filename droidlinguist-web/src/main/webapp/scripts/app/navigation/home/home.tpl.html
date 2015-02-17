@@ -1,0 +1,122 @@
+          <div class="jumbotron">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wow bounceIn" data-wow-delay="0.5s">
+                          <img src="assets/images/droidly-hello.png" class="img-rounded img-responsive">
+                      </div>
+                      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                          <h1>
+                              Droid Linguist
+                          </h1>
+                          <p>A tool that helps you easily translate your killer android apps!</p>
+                          <p>
+                              <a class="btn btn-outline-inverse btn-lg" href ng-click="startTranslating()"><i class="fa fa-android fa-lg"></i> Start Translating</a>
+                              <a class="btn btn-outline-inverse btn-lg" href ui-sref="navigation.features">
+                                <i class="fa fa-eye fa-lg"></i> See Features
+                              </a>
+                              <a class="btn btn-outline-inverse btn-lg" href="https://github.com/tinesoft/droidlinguist"><i class="fa fa-github fa-lg">
+                                </i> Code on Github
+                              </a>
+                          </p>     
+                          <social-buttons website="website" github="github" ></social-buttons>                   
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section-heading section-heading-howto">
+                  <h2>How it works?</h2>
+                  <p>In just 3 simple steps, you can begin using the tool.
+                </div>
+            </div>
+          </div>
+          <section id="section-step1" class="section">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left section-content">
+                    <h2>Step 1 - Languages Selection</h2>
+                    <p>Select the <b> source language</b> in which your <code>strings.xml</code> file is written, and then, the 
+                    <b>target languages</b> you want your application to be translated into.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right section-image wow bounceInRight">
+                    <img src="assets/images/screenshot-step1.png" class="img-rounded img-responsive">
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="section-step2" class="section">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right section-content">
+                    <h2>Step 2 - Translator Selection</h2>
+                    <p>Select a translator engine for automatic pre-translations.</p>
+
+                    <p> You can choose between the most popular translator engines out there: <b>Microsoft Translator</b>, <b>Yandex Translate</b>, and soon, <b>Google Translate</b> (<small><i>the later is already implemented, but not available at the moment, as it requires a paid API key</i></small>).</p>
+
+                    <p> Or if you prefer, you can also choose <b>No Translator</b> at all, to handle the translations directly yourself.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left section-image wow bounceInLeft">
+                    <img src="assets/images/screenshot-step2.png" class="img-rounded img-responsive">
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="section-step3" class="section">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left section-content">
+                    <h2>Step 3 - Strings.xml Upload</h2>
+                    <p>Upload your <code>strings.xml</code> and let the tool do the rest <i class="fa icon-smile"></i></p>
+                    <p> It will do the following:
+                      <ul>
+                        <li>Check the validity of your file and inform you of any error in the XML</li>
+                        <li>Translate all strings in the target langages you chose, using the translator you chose</li>
+                      </ul>                     
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-right section-image wow bounceInRight">
+                    <img src="assets/images/screenshot-step3.png" class="img-rounded img-responsive">
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="section-finalstep" class="section ">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section-content">
+                    <h2>That is it! Review & Download</h2>
+                    <p>You can now review all your translations, in a nice and clear interface, that will assist you during the whole process.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section-image wow bounceIn">
+                    <img src="assets/images/screenshot-translate.png" class="img-responsive">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section-content">
+                    <p>Once done, just hit the <i class="fa fa-lg fa-download"></i> button to get the <code>strings.zip</code> that will contain the translated <code>strings.xml</code> files, and extract it to the <code>res/values</code> folder of your Android project.</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="section-getstarted" class="section wow bounceIn">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 section-content">
+                    <img src="assets/images/droidly-flying.gif" class="img-rounded img-responsive">
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 section-content ">
+                    <h2>Ready to Jump in ? <i class="fa fa-lg icon-smile"></i></h2>
+                    <p>
+                      <a class="btn btn-primary btn-lg" href ng-click="startTranslating()"><i class="fa fa-android fa-lg"></i> Start Translating</a>
+
+                      <a class="btn btn-default btn-lg" href ui-sref="navigation.features" ui-sref-active="active" du-scroll-container>
+                        <i class="fa fa-eye fa-lg"></i> See Features
+                      </a>
+                    </p> 
+                  </div>
+                </div>
+              </div>
+          </section>

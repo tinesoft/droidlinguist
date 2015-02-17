@@ -1,0 +1,27 @@
+<div class="form-group">
+        <label>
+            <language-flag lang="targetLang"></language-flag>
+            <b>{{targetLang.name}}</b> Translation
+        </label>
+
+        <span ng-show="translation.files[targetLang.code].errors.length" class="label label-unsupported-translation">
+        	{{sourceLang.name}} <i class="fa fa-arrow-right"></i> {{targetLang.name}} translations are not (yet) supported by {{translator.name}}
+        </span>
+
+
+        <span ng-hide="translation.files[targetLang.code].errors.length" class="label-translator">
+        	{{translator.credits}} <a ng-href="{{translator.url}}" target="_blank">{{translator.name}}</a>
+        </span>
+
+    	<div ng-show="!!source" class="translation-target-btnbar pull-right" role="group" aria-label="translation target validation buttons">
+			<label class="btn btn-sm btn-default btn-validate" uib-tooltip="Mark these translations as 'validated'"
+				   ng-click="markItemAsValidated(targetLang, source.index)">
+				<i class="fa fa-lg icon-checkmark-double"></i> Validate All
+			</label>
+			<label class="btn btn-sm btn-default btn-reject" uib-tooltip="Mark these translations as 'rejected'"
+				   ng-click="markItemAsRejected(targetLang, source.index)">
+				<i class="fa fa-lg icon-cross-double"></i> Reject All
+			</label>
+		</div>
+
+</div>

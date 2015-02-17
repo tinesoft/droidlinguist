@@ -1,0 +1,9 @@
+<div class="form-group">
+        <label for="translatorComment">
+            <i class="fa fa-commenting-o fa-lg"></i>
+            <b>{{targetLang.name}}</b> Translator Comment
+        </label>
+        <textarea class="form-control" name="translatorComment" 
+        ng-model="translation.files[targetLang.code].strings[source.index].comment" > 
+        </textarea>
+</div>

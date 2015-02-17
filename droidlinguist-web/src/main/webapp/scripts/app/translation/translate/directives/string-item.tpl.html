@@ -1,0 +1,19 @@
+<div class="form-group" ng-class="{'has-warning': translation.files[targetLang.code].strings[source.index].values[0].errors.length}">
+    <textarea class="form-control"  title="Source Text: {{source.value}}"
+    	ng-model="translation.files[targetLang.code].strings[source.index].values[0].text"
+    	ng-change="onTranslationItemValueChanged(targetLang.code, source.index, 0)" ng-readonly="!source.translatable"> 
+    </textarea>
+
+    <item-status source="source" target-lang="targetLang" value-index="0" 
+        on-validate="markValueAsValidated(targetLang, source.index)"
+        on-reject="markValueAsRejected(targetLang, source.index)">
+    </item-status>
+
+    <div class="callout callout-warning translation-target-item-errors" ng-show="translation.files[targetLang.code].strings[source.index].values[0].errors.length">
+    	<ul class="help-block">
+    		<li ng-repeat="(k, v) in translation.files[targetLang.code].strings[source.index].values[0].errors">
+    			<span ng-bind-html="v"></span>
+    		</li>
+    	</ul>
+    </div>
+</div>

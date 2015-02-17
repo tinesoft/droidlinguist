@@ -1,0 +1,28 @@
+                <div class=" translation-step translation-step-2 container-fluid">
+                	<div class="row">
+                		<div class="col-md-6 col-md-offset-3">
+                			<form role="form" name="translatorForm" novalidate >
+                                <please-wait></please-wait>
+                				<legend>Step 2 - Select  Translator Engine</legend>
+                			
+                				<div class="form-group">
+                                     <div class="radio form-control input-lg" ng-repeat="(k, t) in translators">
+                    					 <label>
+                                            <input type="radio" name="translators" ng-model="selection.translator" ng-value="t" ng-disabled="!t.enabled">
+                                            {{t.name}}
+                                          </label>
+                                      </div>
+                				</div>  
+
+                                <button ng-click="goToPrevStep()" class="btn btn-lg btn-primary">
+                                    <i class="fa fa-lg fa-arrow-left"></i> Prev
+                                </button>
+                                <button ng-click="goToNextStep()" ng-disabled="!translatorForm.$valid" class="btn btn-lg btn-primary">
+                                    Next <i class="fa fa-lg fa-arrow-right"></i>
+                                </button>
+
+                			</form>
+		
+                        </div>
+                	</div>
+                </div>

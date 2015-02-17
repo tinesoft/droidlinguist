@@ -1,0 +1,21 @@
+<div ng-show="!!source" class="translation-target-item-status">
+    <span class="translation-target-item-state">
+        <span><small><b>Current State: </b></small></span>
+        <span ng-switch on="translation.files[targetLang.code].strings[source.index].values[valueIndex].state">
+            <span class="translation-target-item-state-rqt" ng-switch-when="rqt"><img src="assets/images/linguist-untranslated.png"><small> Request Translation</small></span>
+            <span class="translation-target-item-state-awv" ng-switch-when="awv"><img src="assets/images/linguist-unvalidated.png"><small> Awaiting Validation</small></span>
+            <span class="translation-target-item-state-rjd" ng-switch-when="rjd"><img src="assets/images/linguist-rejected.png"><small> Rejected</small></span>
+            <span class="translation-target-item-state-vld" ng-switch-when="vld"><img src="assets/images/linguist-validated.png"><small> Validated</small></span>
+        </span>
+    </span>
+    <span class="translation-target-item-btnbar">
+        <label class="btn btn-xs btn-default btn-validate" uib-tooltip="Mark this translation as 'validated'"
+               ng-click="onValidate()" ng-disabled="['awv', 'rjd'].indexOf(translation.files[targetLang.code].strings[source.index].values[valueIndex].state)==-1">
+            <i class="fa icon-checkmark-double"></i> Validate
+        </label>
+        <label class="btn btn-xs btn-default btn-reject" uib-tooltip="Mark this translation as 'rejected'"
+               ng-click="onReject()" ng-disabled="['awv', 'vld'].indexOf(translation.files[targetLang.code].strings[source.index].values[valueIndex].state)==-1">
+            <i class="fa icon-cross-double"></i> Reject
+        </label>
+    </span>
+</div>

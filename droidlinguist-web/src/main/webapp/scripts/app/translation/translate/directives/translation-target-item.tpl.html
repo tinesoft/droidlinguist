@@ -1,0 +1,12 @@
+<div id="translation-target-item-{{t.code}}" ng-show="t.visible" class="translation-target-item" ng-repeat="t in targetLangs"  ng-switch on="source.type" >
+
+    <header-item source="source" target-lang="t"></header-item>
+
+    <string-item source="source" target-lang="t" ng-switch-when="string"></string-item>
+
+    <string-array-item source="source" target-lang="t" ng-switch-when="string-array"></string-array-item>
+
+    <plurals-item source="source" target-lang="t" ng-switch-when="plurals" ></plurals-item>
+
+    <comment-item source="source" target-lang="t"></comment-item>
+</div>

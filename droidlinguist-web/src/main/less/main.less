@@ -1,0 +1,168 @@
+
+//** Load fonts from this directory.
+@icon-font-path:          "../../bower_components/bootstrap/fonts/";
+@fa-font-path  :          "../../bower_components/font-awesome/fonts/";
+
+// bower:less
+@import 'bootstrap/less/bootstrap.less';
+@import 'flag-icon-css/less/flag-icon.less';
+@import 'font-awesome/less/font-awesome.less';
+@import 'animate.less/source/animated.less';
+@import 'animate.less/source/pulse.less';
+@import 'animate.less/source/shake.less';
+@import 'animate.less/source/fadeInUp.less';
+@import 'animate.less/source/fadeInLeft.less';
+@import 'animate.less/source/bounceIn.less';
+@import 'animate.less/source/bounceOut.less';
+@import 'animate.less/source/bounceInLeft.less';
+@import 'animate.less/source/bounceInRight.less';
+@import 'animate.less/source/bounceOutLeft.less';
+@import 'animate.less/source/bounceOutRight.less';
+@import 'animate.less/source/fadeOutLeft.less';
+@import 'animate.less/source/fadeOutRight.less';
+// endbower
+
+
+@import 'toolbar.less';
+@import 'variables.less';
+@import 'animation.less';
+@import 'navigation.less';
+@import 'translation.less';
+
+/**
+ * Typography
+ */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(fonts/Roboto-Regular.woff) format('woff');
+}
+
+code, pre, .pre {
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #EFEFEF;
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+}
+
+code {
+  padding: 0 3px;
+}
+
+pre {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+
+body { padding-top: 50px;}
+
+legend {
+  font: 2em 'museo-sans', sans-serif;
+  color: #58585a;
+  margin: 0 0 20px;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+textarea{
+  resize: vertical;
+}
+
+//to fix the problem with href="#" causing routes change with Angular
+.nav, .pagination, .carousel, .panel-title, .list-group a { cursor: pointer; }
+
+/**
+ * Debugging: Show Grid
+ *
+ */
+/*div[class="row"] {
+    border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+div[class^="col-"] {
+    background-color: rgba(255, 0, 0, 0.2);
+}*/
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-vertical
+{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.scrollable {
+  height: 100%;
+  overflow: auto;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.callout {
+  padding: 20px;
+  margin: 5px 20px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.callout-info {
+  border-left-color: #5bc0de;
+}
+
+.callout-warning,
+.alert-warning {  
+  border-left-color: #f0ad4e;
+  &.ng-hide-remove{
+    .animated();
+    .shake();
+  }
+}
+
+.callout-danger,
+.alert-danger {
+  border-left-color: #ce4844;
+  &.ng-hide-remove{
+    .animated();
+    .shake();
+  }
+}
+
+/* Have to set height explicity on ui-view to prevent collapsing during animation*/
+.ui-view-container {
+  position: relative;
+  height: 100;
+}
+
+[ui-view="content"].ng-enter {
+
+  .animated();
+  .bounceInLeft();
+}
+
+[ui-view="content"].ng-leave {
+
+  .animated();
+  .bounceInRight();
+}
+
+/*need to be globally avaliable for wow.js*/
+.animated {
+  .animated();
+}

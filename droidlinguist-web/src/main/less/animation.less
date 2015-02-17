@@ -1,0 +1,73 @@
+@-webkit-keyframes changeBgColor {
+  0% {background-color:#3c9200;}
+  25% {background-color: #d0e7b5;}
+  50% {background-color:#dcedc8;}
+  100% {background-color: #f1f1f1;}
+}
+
+@-moz-keyframes changeBgColor {
+  0% {background-color:#3c9200;}
+  25% {background-color: #d0e7b5;}
+  50% {background-color:#dcedc8;}
+  100% {background-color: #f1f1f1;}
+}
+
+@-o-keyframes changeBgColor {
+  0% {background-color:#3c9200;}
+  25% {background-color: #d0e7b5;}
+  50% {background-color:#dcedc8;}
+  100% {background-color: #f1f1f1;}
+}
+
+@keyframes changeBgColor {
+  0% {background-color:#3c9200;}
+  25% {background-color: #d0e7b5;}
+  50% {background-color:#dcedc8;}
+  100% {background-color: #f1f1f1;}
+}
+
+/*.keyframes(@start-color:#f1f1f1, @end-color:#3c9200){
+  @-webkit-keyframes changeBgColor {
+    0% {background-color: @start-color;}
+    100% {background-color:@end-color;}
+  }
+
+  @-moz-keyframes changeBgColor {
+    0% {background-color: @start-color;}
+    100% {background-color:@end-color;}
+  }
+
+  @-o-keyframes changeBgColor {
+    0% {background-color: @start-color;}
+    100% {background-color:@end-color;}
+  }
+
+  @keyframes changeBgColor {
+    0% {background-color: @start-color;}
+    100% {background-color:@end-color;}
+  }
+
+}
+*/
+
+.animated-highlight() {
+  -webkit-animation-duration: @animationDurationTime, @animationDurationTime*4;
+  -moz-animation-duration: @animationDurationTime, @animationDurationTime*4;
+  -o-animation-duration: @animationDurationTime, @animationDurationTime*4;
+  animation-duration: @animationDurationTime, @animationDurationTime*4;
+  
+  -webkit-animation-delay: @animationDelayTime, @animationDelayTime;
+  -moz-animation-delay: @animationDelayTime, @animationDelayTime;
+  -o-animation-delay: @animationDelayTime, @animationDelayTime;
+  animation-delay: @animationDelayTime, @animationDelayTime;
+  
+  -webkit-animation-fill-mode: @animationFillMode, @animationFillMode;
+  -moz-animation-fill-mode: @animationFillMode, @animationFillMode;
+  -o-animation-fill-mode: @animationFillMode, @animationFillMode;
+  animation-fill-mode: @animationFillMode, @animationFillMode;
+
+  -webkit-animation-name: bounceIn, changeBgColor;
+  -moz-animation-name: bounceIn, changeBgColor;
+  -o-animation-name: bounceIn, changeBgColor;
+  animation-name: bounceIn, changeBgColor;
+}

@@ -1,0 +1,24 @@
+<div class="form-group" ng-repeat="(i,v) in source.values">
+    <div class="input-group" ng-class="{'has-warning': translation.files[targetLang.code].strings[source.index].values[i].errors.length}">
+            <span class="input-group-addon" >Quantity [ <b>{{v.quantity | pad:{ padMaxSize : 5, padStr: ' ', padDir : 'both'}  }}</b> ]</span>
+            <textarea class="form-control" title="Source Text: {{v.text}}" 
+            	ng-model="translation.files[targetLang.code].strings[source.index].values[i].text"
+            	ng-change="onTranslationItemValueChanged(targetLang.code, source.index, i)" ng-readonly="!source.translatable">
+            </textarea>
+    </div>
+
+    <item-status source="source" target-lang="targetLang" value-index="i" 
+        on-validate="markValueAsValidated(targetLang, source.index, i)"
+        on-reject="markValueAsRejected(targetLang, source.index, i)">
+    </item-status>
+
+    <div ng-class="{'has-warning': translation.files[targetLang.code].strings[source.index].values[i].errors.length}">
+	    <div class="callout callout-warning translation-target-item-errors" ng-show="translation.files[targetLang.code].strings[source.index].values[i].errors.length">
+	        <ul class="help-block">
+	            <li ng-repeat="(k, v) in translation.files[targetLang.code].strings[source.index].values[i].errors">
+	                <span ng-bind-html="v"></span>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+</div>

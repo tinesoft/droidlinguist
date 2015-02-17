@@ -1,0 +1,40 @@
+<div class="target-languages list-group" du-scroll-container="page-content">
+    <a ng-repeat="t in targetLangs"  ng-click="toggleTargetLangVisibility(t);" ng-class="{active: t.visible}"
+     du-smooth-scroll="translation-target-item-{{t.code}}" 
+     class ="target-language-item list-group-item">
+
+        <h4 class="list-group-item-heading">
+            <language-flag lang="t"></language-flag>
+            {{t.name}} - {{t.code}} 
+            <button type="button" class="close pull-right" ng-click="removeTargetLang(t)"><span aria-hidden="true">&times;</span></button>
+        </h4>
+        <div class="list-group-item-text">
+        	<small>{{t.nativeName}}</small>
+        	<div class="target-language-item-stats">
+        		<span class="target-language-item-stat">
+        			<img src="assets/images/linguist-untranslated.png" class="img-responsive">
+        			<span class="badge" title="{{ untranslatedCounter(t) }} item(s) awaiting translation out of {{ totalCounter(t) }}">
+        				{{ untranslatedCounter(t) }}/{{ totalCounter(t) }}
+        			</span>
+        		</span>
+        		<span class="target-language-item-stat">
+        			<img src="assets/images/linguist-failures.png" class="img-responsive">
+        			<span class="badge" title="{{ failedCounter(t) }} item(s) failing validation out of {{ totalCounter(t) }}">
+                        {{ failedCounter(t) }}/{{totalCounter(t)}}</span>
+        		</span>
+            </div>
+            <div class="target-language-item-stats">
+                <span class="target-language-item-stat">
+                    <img src="assets/images/linguist-unvalidated.png" class="img-responsive">
+                    <span class="badge" title="{{ unvalidatedCounter(t) }} item(s) awaiting validation out of {{ totalCounter(t) }}">
+                        {{ unvalidatedCounter(t) }}/{{ totalCounter(t) }}</span>
+                </span>
+                <span class="target-language-item-stat">
+                    <img src="assets/images/linguist-validated.png" class="img-responsive">
+                    <span class="badge" title="{{ validatedCounter(t) }} item(s) validated out of {{ totalCounter(t) }}">
+                        {{ validatedCounter(t) }}/{{ totalCounter(t) }}</span>
+                </span>
+			</div>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,130 @@
+######################
+# Project Specific
+######################
+/src/main/webapp/assets/styles/main.css
+/src/main/webapp/dist
+
+######################
+# Node
+######################
+/node/**
+/node_modules/**
+
+######################
+# Bower Components
+######################
+/src/main/webapp/bower_components/**/*.md
+/src/main/webapp/bower_components/**/*.txt
+/src/main/webapp/bower_components/**/*.yml
+/src/main/webapp/bower_components/**/*.json
+/src/main/webapp/bower_components/**/*.sass
+/src/main/webapp/bower_components/**/*.less
+!/src/main/webapp/bower_components/animate.less/
+/src/main/webapp/bower_components/animate.less/*.less
+/src/main/webapp/bower_components/**/*.scss
+/src/main/webapp/bower_components/**/*.coffee
+/src/main/webapp/bower_components/**/*.bowerrc
+/src/main/webapp/bower_components/**/*.jshintrc
+/src/main/webapp/bower_components/**/*.gitignore
+/src/main/webapp/bower_components/**/*.editorconfig
+/src/main/webapp/bower_components/**/karma.conf.js
+/src/main/webapp/bower_components/**/Gruntfile.js
+/src/main/webapp/bower_components/**/LICENSE
+/src/main/webapp/bower_components/*/spec/**
+/src/main/webapp/bower_components/*/test/**
+/src/main/webapp/bower_components/*/demo/**
+/src/main/webapp/bower_components/*/example*/**
+
+######################
+# SASS
+######################
+.sass-cache/**
+
+######################
+# Eclipse
+######################
+*.pydevproject
+.project
+.metadata
+/bin/**
+/tmp/**
+/tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/**
+.loadpath
+/src/main/resources/rebel.xml
+
+# External tool builders
+.externalToolBuilders/**
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+######################
+# Intellij
+######################
+.idea/**
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+######################
+# Maven
+######################
+/log/**
+/target/**
+
+
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+######################
+# Directories
+######################
+/build/**
+/bin/**
+/spring_loaded/**
+/misc_resources/**
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+
+/target/
+/bin/

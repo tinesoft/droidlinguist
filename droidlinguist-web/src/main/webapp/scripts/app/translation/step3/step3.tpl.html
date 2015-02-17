@@ -1,0 +1,50 @@
+                <div class=" translation-step translation-step-3 container-fluid">
+                	<div class="row">
+                		<div class="col-md-6 col-md-offset-3">
+                			<form role="form" name="uploadForm" novalidate >
+                                <please-wait></please-wait>
+                				<legend>Step 3 - Upload Source Translation File</legend>
+                			
+                				<div class="form-group">
+                					<label for="sourceFile">Select your source XML file:</label>
+                					<input type="file" name="sourceFile" accept="'text/xml'" ng-model="sourceFile" ng-disabled="isUploading" 
+                                                        ngf-pattern="'text/xml'" ngf-select="uploadSrcFile($file,$invalidFiles)"
+                                                        class="form-control input-lg" required>
+                				</div>  
+
+                                <button ng-click="goToPrevStep()" ng-disabled="isUploading" class="btn btn-lg btn-primary">
+                                    <i class="fa fa-lg fa-arrow-left"></i> Prev
+                                </button>
+                                <button ng-click="goToNextStep()" ng-disabled="!sourceFile.data" class="btn btn-lg btn-primary">
+                                    Next <i class="fa fa-lg fa-{{isUploading? 'spinner fa-spin' : 'arrow-right'}}"></i>
+                                </button>
+
+                				<span class="upload-progress" ng-show="sourceFile.progress >= 0 &&  sourceFile.progress <100">              
+                                    <div style="width:{{sourceFile.progress}}%" ng-bind="sourceFile.progress + '%'" class="ng-binding"></div>
+								</span>
+                                
+								<span ng-show="sourceFile.data" class="label label-success">
+                                    <b>{{sourceFile.name}}</b> successfully uploaded / translated! Click <b>Next</b> to proceed.
+                                </span>
+
+								<span ng-show="uploadForm.sourceFile.$dirty && !isUploading && !sourceFile.data" class="label label-danger">
+                                    <b>{{sourceFile.name}}</b> could not be uploaded / translated. Please retry.
+                                </span> 
+                			</form>
+							<div accept="'text/xml'" ng-model="sourceFile" ngf-drop-disabled="isUploading" 
+											ngf-drop="uploadSrcFile($file,$invalidFiles)" ngf-multiple="false" 
+											ngf-drag-over-class="{accept:'dragover', reject:'dragover-err', delay:100}" 
+											ngf-allow-dir="false"  ngf-stop-propagation="true" class=" upload-drop-zone">
+								<p class="upload-drop-zone-placeholder"> Drag & Drop here...</p>
+							</div>
+                            <p class="text-muted">You don't have an Android <code>strings.xml</code> file right now? But just want to test this awesome app? No problem! Here's an <a href="https://github.com/tinesoft/droidlinguist/raw/master/droidlinguist-server/src/test/resources/strings.xml" target="_blank">example file</a> you can use <i class="fa icon-smile"></i></p>
+							<div ngf-no-file-drop>Drag & Drop is not supported by this browser.</div>
+							<div ng-show="!!errors" class="alert alert-danger" role="alert">
+									<p class="text-muted">The source XML file you have uploaded is not valid. Please fix the following errors and try again:</p>
+									<ul>
+										<li ng-repeat="error in errors">{{error}}</li>
+									</ul>
+							</div>
+                        </div>
+                	</div>
+                </div>

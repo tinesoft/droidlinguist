@@ -1,0 +1,188 @@
+//from https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1
+
+new Language("aa", "Afar", "Afaraf"),//
+new Language("ab", "Abkhazian", "Аҧсуа"),//
+new Language("ae", "Avestan", "Avesta"),//
+new Language("af", "Afrikaans", "Afrikaans"),//
+new Language("ak", "Akan", "Akan"),//
+new Language("am", "Amharic", "አማርኛ"),//
+new Language("an", "Aragonese", "Aragonés"),//
+new Language("ar", "Arabic", "‫العربية"),//
+new Language("as", "Assamese", "অসমীয়া"),//
+new Language("av", "Avaric", "авар мацӀ ; магӀарул мацӀ"),//
+new Language("ay", "Aymara", "Aymar aru"),//
+new Language("az", "Azerbaijani", "Azərbaycan dili"),//
+new Language("ba", "Bashkir", "башҡорт теле"),//
+new Language("be", "Belarusian", "Беларуская"),//
+new Language("bg", "Bulgarian", "български език"),//
+new Language("bh", "Bihari", "भोजपुरी"),//
+new Language("bi", "Bislama", "Bislama"),//
+new Language("bm", "Bambara", "Bamanankan"),//
+new Language("bn", "Bengali", "বাংলা"),//
+new Language("bo", "Tibetan", "བོད་ཡིག"),//
+new Language("br", "Breton", "Brezhoneg"),//
+new Language("bs", "Bosnian", "Bosanski jezik"),//
+new Language("ca", "Catalan", "Català"),//
+new Language("ce", "Chechen", "нохчийн мотт"),//
+new Language("ch", "Chamorro", "Chamoru"),//
+new Language("co", "Corsican", "Corsu ; lingua corsa"),//
+new Language("cr", "Cree", "ᓀᐦᐃᔭᐍᐏᐣ"),//
+new Language("cs", "Czech", "Česky ; čeština"),//
+new Language("cu", "Old Church Slavonic", "Словѣньскъ"),//
+new Language("cv", "Chuvash", "чӑваш чӗлхи"),//
+new Language("cy", "Welsh", "Cymraeg"),//
+new Language("da", "Danish", "Dansk"),//
+new Language("de", "German", "Deutsch"),//
+new Language("dv", "Divehi", "‫ދިވެހި"),//
+new Language("dz", "Dzongkha", "རྫོང་ཁ"),//
+new Language("ee", "Ewe", "Ɛʋɛgbɛ"),//
+new Language("el", "Greek", "Ελληνικά"),//
+new Language("en", "English", "English"),//
+new Language("eo", "Esperanto", "Esperanto"),//
+new Language("es", "Spanish", "Español; castellano"),//
+new Language("et", "Estonian", "Eesti keel"),//
+new Language("eu", "Basque", "Euskara"),//
+new Language("fa", "Persian", "‫فارسی"),//
+new Language("ff", "Fulah", "Fulfulde"),//
+new Language("fi", "Finnish", "Suomen kieli"),//
+new Language("fj", "Fijian", "Vosa Vakaviti"),//
+new Language("fo", "Faroese", "Føroyskt"),//
+new Language("fr", "French", "Français ; langue française"),//
+new Language("fy", "Western Frisian", "Frysk"),//
+new Language("ga", "Irish", "Gaeilge"),//
+new Language("gd", "Scottish Gaelic", "Gàidhlig"),//
+new Language("gl", "Galician", "Galego"),//
+new Language("gn", "Guarani", "Avañe'ẽ"),//
+new Language("gu", "Gujarati", "ગુજરાતી"),//
+new Language("gv", "Manx", "Ghaelg"),//
+new Language("ha", "Hausa", "‫هَوُسَ"),//
+new Language("he", "Hebrew", "‫עברית"),//
+new Language("hi", "Hindi", "हिन्दी ; हिंदी"),//
+new Language("ho", "Hiri Motu", "Hiri Motu"),//
+new Language("hr", "Croatian", "Hrvatski"),//
+new Language("ht", "Haitian", "Kreyòl ayisyen"),//
+new Language("hu", "Hungarian", "magyar"),//
+new Language("hy", "Armenian", "Հայերեն"),//
+new Language("hz", "Herero", "Otjiherero"),//
+new Language("ia", "Interlingua", "Interlingua"),//
+new Language("id", "Indonesian", "Bahasa Indonesia"),//
+new Language("ie", "Interlingue", "Interlingue"),//
+new Language("ig", "Igbo", "Igbo"),//
+new Language("ii", "Sichuan Yi", "ꆇꉙ"),//
+new Language("ik", "Inupiaq", "Iñupiaq ; Iñupiatun"),//
+new Language("io", "Ido", "Ido"),//
+new Language("is", "Icelandic", "Íslenska"),//
+new Language("it", "Italian", "Italiano"),//
+new Language("iu", "Inuktitut", "ᐃᓄᒃᑎᑐᑦ"),//
+new Language("ja", "Japanese", "日本語 (にほんご)"),//
+new Language("jv", "Javanese", "Basa Jawa"),//
+new Language("ka", "Georgian", "ქართული"),//
+new Language("kg", "Kongo", "KiKongo"),//
+new Language("ki", "Kikuyu", "Gĩkũyũ"),//
+new Language("kj", "Kwanyama", "Kuanyama"),//
+new Language("kk", "Kazakh", "Қазақ тілі"),//
+new Language("kl", "Kalaallisut", "Kalaallisut ; kalaallit oqaasii"),//
+new Language("km", "Khmer", "ភាសាខ្មែរ"),//
+new Language("kn", "Kannada", "ಕನ್ನಡ"),//
+new Language("ko", "Korean", "한국어 (韓國語) ; 조선말 (朝鮮語)"),//
+new Language("kr", "Kanuri", "Kanuri"),//
+new Language("ks", "Kashmiri", "कश्मीरी ; كشميري"),//
+new Language("ku", "Kurdish", "Kurdî ; كوردی"),//
+new Language("kv", "Komi", "коми кыв"),//
+new Language("kw", "Cornish", "Kernewek"),//
+new Language("ky", "Kirghiz", "кыргыз тили"),//
+new Language("la", "Latin", "Latine ; lingua latina"),//
+new Language("lb", "Luxembourgish", "Lëtzebuergesch"),//
+new Language("lg", "Ganda", "Luganda"),//
+new Language("li", "Limburgish", "Limburgs"),//
+new Language("ln", "Lingala", "Lingála"),//
+new Language("lo", "Lao", "ພາສາລາວ"),//
+new Language("lt", "Lithuanian", "Lietuvių kalba"),//
+new Language("lu", "Luba-Katanga", "kiluba"),//
+new Language("lv", "Latvian", "Latviešu valoda"),//
+new Language("mg", "Malagasy", "Fiteny malagasy"),//
+new Language("mh", "Marshallese", "Kajin M̧ajeļ"),//
+new Language("mi", "Māori", "Te reo Māori"),//
+new Language("mk", "Macedonian", "македонски јазик"),//
+new Language("ml", "Malayalam", "മലയാളം"),//
+new Language("mn", "Mongolian", "Монгол"),//
+new Language("mo", "Moldavian", "лимба молдовеняскэ"),//
+new Language("mr", "Marathi", "मराठी"),//
+new Language("ms", "Malay", "Bahasa Melayu ; بهاس ملايو"),//
+new Language("mt", "Maltese", "Malti"),//
+new Language("my", "Burmese", "ဗမာစာ"),//
+new Language("na", "Nauru", "Ekakairũ Naoero"),//
+new Language("nb", "Norwegian Bokmål", "Norsk bokmål"),//
+new Language("nd", "North Ndebele", "isiNdebele"),//
+new Language("ne", "Nepali", "नेपाली"),//
+new Language("ng", "Ndonga", "Owambo"),//
+new Language("nl", "Dutch", "Nederlands"),//
+new Language("nn", "Norwegian Nynorsk", "Norsk nynorsk"),//
+new Language("no", "Norwegian", "Norsk"),//
+new Language("nr", "South Ndebele", "Ndébélé"),//
+new Language("nv", "Navajo", "Diné bizaad ; Dinékʼehǰí"),//
+new Language("ny", "Chichewa", "ChiCheŵa ; chinyanja"),//
+new Language("oc", "Occitan", "Occitan"),//
+new Language("oj", "Ojibwa", "ᐊᓂᔑᓈᐯᒧᐎᓐ"),//
+new Language("om", "Oromo", "Afaan Oromoo"),//
+new Language("or", "Oriya", "ଓଡ଼ିଆ"),//
+new Language("os", "Ossetian", "Ирон æвзаг"),//
+new Language("pa", "Panjabi", "ਪੰਜਾਬੀ ; پنجابی"),//
+new Language("pi", "Pāli", "पािऴ"),//
+new Language("pl", "Polish", "Polski"),//
+new Language("ps", "Pashto", "‫پښتو"),//
+new Language("pt", "Portuguese", "Português"),//
+new Language("qu", "Quechua", "Runa Simi ; Kichwa"),//
+new Language("rm", "Romansh", "Rumantsch grischun"),//
+new Language("rn", "Kirundi", "kiRundi"),//
+new Language("ro", "Romanian", "Română"),//
+new Language("ru", "Russian", "русский язык"),//
+new Language("rw", "Kinyarwanda", "Kinyarwanda"),//
+new Language("sa", "Sanskrit", "संस्कृतम्"),//
+new Language("sc", "Sardinian", "sardu"),//
+new Language("sd", "Sindhi", "सिन्धी ; ‫سنڌي، سندھی"),//
+new Language("se", "Northern Sami", "Davvisámegiella"),//
+new Language("sg", "Sango", "Yângâ tî sängö"),//
+new Language("sh", "", ""),//
+new Language("si", "Sinhalese", "සිංහල"),//
+new Language("sk", "Slovak", "Slovenčina"),//
+new Language("sl", "Slovene", "Slovenščina"),//
+new Language("sm", "Samoan", "Gagana fa'a Samoa"),//
+new Language("sn", "Shona", "chiShona"),//
+new Language("so", "Somali", "Soomaaliga ; af Soomaali"),//
+new Language("sq", "Albanian", "Shqip"),//
+new Language("sr", "Serbian", "српски језик"),//
+new Language("ss", "Swati", "SiSwati"),//
+new Language("st", "Sotho", "seSotho"),//
+new Language("su", "Sundanese", "Basa Sunda"),//
+new Language("sv", "Swedish", "Svenska"),//
+new Language("sw", "Swahili", "Kiswahili"),//
+new Language("ta", "Tamil", "தமிழ்"),//
+new Language("te", "Telugu", "తెలుగు"),//
+new Language("tg", "Tajik", "тоҷикӣ ; toğikī ; ‫تاجیکی"),//
+new Language("th", "Thai", "ไทย"),//
+new Language("ti", "Tigrinya", "ትግርኛ"),//
+new Language("tk", "Turkmen", "Türkmen ; Түркмен"),//
+new Language("tl", "Tagalog", "Tagalog"),//
+new Language("tn", "Tswana", "seTswana"),//
+new Language("to", "Tonga", "faka Tonga"),//
+new Language("tr", "Turkish", "Türkçe"),//
+new Language("ts", "Tsonga", "xiTsonga"),//
+new Language("tt", "Tatar", "татарча ; tatarça ; ‫تاتارچا"),//
+new Language("tw", "Twi", "Twi"),//
+new Language("ty", "Tahitian", "Reo Mā`ohi"),//
+new Language("ug", "Uighur", "Uyƣurqə ; ‫ئۇيغۇرچ"),//
+new Language("uk", "Ukrainian", "українська мова"),//
+new Language("ur", "Urdu", "‫اردو"),//
+new Language("uz", "Uzbek", "O'zbek ; Ўзбек ; أۇزبېك"),//
+new Language("ve", "Venda", "tshiVenḓa"),//
+new Language("vi", "Viêt Namese", "Tiếng Việt"),//
+new Language("vo", "Volapük", "Volapük"),//
+new Language("wa", "Walloon", "Walon"),//
+new Language("wo", "Wolof", "Wollof"),//
+new Language("xh", "Xhosa", "isiXhosa"),//
+new Language("yi", "Yiddish", "‫ייִדיש"),//
+new Language("yo", "Yoruba", "Yorùbá"),//
+new Language("za", "Zhuang", "Saɯ cueŋƅ ; Saw cuengh"),//
+new Language("zh", "Chinese", "中文, 汉语, 漢語"),//
+new Language("zu", "Zulu", "isiZulu"),//

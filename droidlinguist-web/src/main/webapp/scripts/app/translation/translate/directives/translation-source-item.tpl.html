@@ -1,0 +1,36 @@
+<div class="translation-source-item" ng-switch on="source.type">
+    <div class="form-group">
+        <label for="sourceText">
+            <language-flag lang="sourceLang"></language-flag>
+            Source Text
+        </label>
+        <span ng-show="!! source" class="label label-{{source.type}}">{{source.type}}</span>
+        <span ng-show="!! source && !source.translatable" class="label label-untranslatable">non translatable</span>
+        <p ng-hide="!! source" class="no-source-item-selected">Select a source text from the grid above</p>
+    </div>
+    
+    <div ng-switch-when="string">
+        <div class="form-group" >
+            <textarea class="form-control" name="sourceText" ng-model="source.value" 
+             readonly></textarea>
+        </div>
+    </div>
+
+    <div ng-switch-when="string-array"><!--TODO: useless in angular.js 1.3-->
+        <div class="form-group" ng-repeat="(k, v) in source.values">
+            <div class="input-group">
+                    <span class="input-group-addon" >Item [ <b>{{k.toString() | pad:{ padMaxSize : 3, padStr: ' ', padDir : 'both'} }} </b>]</span>
+                    <textarea class="form-control" ng-model="v"  readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div ng-switch-when="plurals" ><!--TODO: useless in angular.js 1.3-->
+        <div class="form-group" ng-repeat="(k, v) in source.values">
+            <div class="input-group">
+                    <span class="input-group-addon" >Quantity [ <b>{{v.quantity  | pad:{ padMaxSize : 5, padStr: ' ', padDir : 'both'} }}</b> ]</span>
+                    <textarea class="form-control" ng-model="v.text"  readonly></textarea>
+            </div>
+        </div>
+    </div>
+</div>

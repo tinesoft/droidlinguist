@@ -1,0 +1,26 @@
+#Common translator options
+translator :
+    maxTextsPerTranslation : 10
+
+# Microsoft Translator API (see https://www.microsoft.com/en-us/translator/getstarted.aspx for instructions)
+    microsoft : 
+        clientId : @translator.microsoft.clientId@ 
+        clientSecret : @translator.microsoft.clientSecret@ 
+        grantType : client_credentials
+        scope : http://api.microsofttranslator.com
+
+# Yandex Translator API (see https://tech.yandex.com/translate/ for instructions on how to get your API Key)
+    yandex :
+        apiKey: @translator.yandex.apiKey@ 
+        options :
+            format : html
+            uiLang : en
+            autoDetectLang : 0
+
+# Google Translator API (see https://cloud.google.com/translate/ for instructions on how to get your API Key)
+    google :
+        apiKey : @translator.google.apiKey@ 
+        options :
+            format : html
+            targetLang : en
+            prettyPrint : false

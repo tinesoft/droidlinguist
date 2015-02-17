@@ -1,0 +1,42 @@
+//from https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+new Language("ab", "Abkhaz", "Аҧсуа"),//
+new Language("sq", "Albanian", "Shqip"),//
+new Language("ar", "Arabic", "العربية"),//
+new Language("be", "Belarusian", "Беларуская"),//
+new Language("bs", "Bosnian", "Bosanski Jezik"),//
+new Language("bg", "Bulgarian", "Български Език"),//
+new Language("zh", "Chinese", "中文 (Zhōngwén),// 汉语, 漢語"),//
+new Language("hr", "Croatian", "Hrvatski"),//
+new Language("cs", "Czech", "Česky, Čeština"),//
+new Language("da", "Danish", "Dansk"),//
+new Language("nl", "Dutch", "Nederlands, Vlaams"),//
+new Language("en", "English", "English"),//
+new Language("fi", "Finnish", "Suomi, Suomen Kieli"),//
+new Language("fr", "French", "Français"),//
+new Language("de", "German", "Deutsch"),//
+new Language("el", "Greek, Modern", "Ελληνικά"),//
+new Language("he", "Hebrew (modern)", "עברית"),//
+new Language("hu", "Hungarian", "Magyar"),//
+new Language("id", "Indonesian", "Bahasa Indonesia"),//
+new Language("is", "Icelandic", "Íslenska"),//
+new Language("it", "Italian", "Italiano"),//
+new Language("ja", "Japanese", "日本語 (にほんご／にっぽんご)"),//
+new Language("ko", "Korean", "한국어 (韓國語),// 조선말 (朝鮮語)"),//
+new Language("lb", "Luxembourgish", "Lëtzebuergesch"),//
+new Language("lt", "Lithuanian", "Lietuvių Kalba"),//
+new Language("lv", "Latvian", "Latviešu Valoda"),//
+new Language("no", "Norwegian", "Norsk"),//
+new Language("fa", "Persian", "فارسی"),//
+new Language("pl", "Polish", "Polski"),//
+new Language("pt", "Portuguese", "Português"),//
+new Language("ro", "Romanian", "Română"),//
+new Language("ru", "Russian", "Русский Язык"),//
+new Language("sr", "Serbian", "Српски Језик"),//
+new Language("sk", "Slovak", "Slovenčina"),//
+new Language("sl", "Slovene", "Slovenščina"),//
+new Language("es", "Spanish", "Español"),//
+new Language("sv", "Swedish", "Svenska"),//
+new Language("th", "Thai", "ไทย"),//
+new Language("tr", "Turkish", "Türkçe"),//
+new Language("uk", "Ukrainian", "Українська"),//
+new Language("vi", "Vietnamese", "Tiếng Việt")

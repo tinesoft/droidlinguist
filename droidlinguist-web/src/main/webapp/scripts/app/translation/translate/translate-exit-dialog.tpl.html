@@ -1,0 +1,21 @@
+
+<div class="modal-header">
+    <button type="button" class="close" aria-hidden="true"
+            ng-click="cancel()">&times;</button>
+    <h4 class="modal-title" translate="entity.delete.title">Confirm Exit</h4>
+</div>
+
+<div class="modal-body" >
+	<p>You are about to exit the translation page. This may <b>reset your current work</b>.</p>
+
+    <p>Click <b><i class="fa fa-lg fa-ban"></i> Cancel</b> to stay on this page. Otherwise, click <b><i class="fa fa-lg fa-sign-out"></i> Proceed</b>.</p>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="cancel()">
+        <i class="fa fa-lg fa-ban"></i> Cancel
+    </button>
+    <button type="button" class="btn btn-danger" ng-click="proceed()">
+        <i class="fa fa-lg fa-sign-out"></i> Proceed 
+    </button>
+</div>

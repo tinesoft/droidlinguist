@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" version="1.0"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	jaxb:version="2.1">
+
+	<xsd:element name="resources">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded" minOccurs="0">
+				<xsd:element type="stringType" name="string" maxOccurs="unbounded"
+					minOccurs="0" />
+				<xsd:element type="stringArrayType" name="string-array"
+					maxOccurs="unbounded" minOccurs="0" />
+				<xsd:element type="pluralsType" name="plurals"
+					maxOccurs="unbounded" minOccurs="0" />
+			</xsd:choice>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:complexType name="itemType" mixed="true">
+		<xsd:sequence>
+			<xsd:any processContents="skip" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute type="quantityType" name="quantity" use="optional" />
+	</xsd:complexType>
+
+	<xsd:simpleType name="quantityType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="zero" />
+			<xsd:enumeration value="one" />
+			<xsd:enumeration value="two" />
+			<xsd:enumeration value="few" />
+			<xsd:enumeration value="many" />
+			<xsd:enumeration value="other" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="stringType" mixed="true">
+		<xsd:sequence>
+			<xsd:any processContents="skip" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute type="xsd:string" name="name" use="required" />
+		<xsd:attribute type="xsd:boolean" name="translatable" use="optional" />
+	</xsd:complexType>
+
+	<xsd:complexType name="stringArrayType">
+		<xsd:sequence>
+			<xsd:element type="itemType" name="item" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute type="xsd:string" name="name" use="required" />
+		<xsd:attribute type="xsd:boolean" name="translatable" use="optional" />
+	</xsd:complexType>
+
+	<xsd:complexType name="pluralsType">
+		<xsd:sequence>
+			<xsd:element type="itemType" name="item" maxOccurs="unbounded"
+				minOccurs="0" />
+		</xsd:sequence>
+		<xsd:attribute type="xsd:string" name="name" use="required" />
+		<xsd:attribute type="xsd:boolean" name="translatable" use="optional" />
+	</xsd:complexType>
+
+
+</xsd:schema>

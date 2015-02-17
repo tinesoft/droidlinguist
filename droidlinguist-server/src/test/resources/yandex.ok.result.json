@@ -1,0 +1,10 @@
+{
+    "code": 200,
+    "detected": {
+        "lang": "en"
+    },
+    "lang": "en-fr",
+    "text": [
+        "Cette phrase est écrite en anglais. Microsoft Translator API détecter?"
+    ]
+}
