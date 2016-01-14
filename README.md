@@ -39,7 +39,7 @@ Once installed, simply run the following command from the project *root director
 $ mvn clean install 
 ```
 
-Then, move to **droidlinguist-web** folder and run the following to start the local server (@ [http:localhost:8080](http:localhost:8080)):
+Then, move to **droidlinguist-web** folder and run the following to start the local server (at [http://localhost:8080](http://localhost:8080)):
 
 ```
 $ mvn [<TRANSLATOR_OPTIONS>] -P<PROFILE> 
@@ -65,10 +65,10 @@ If no warnings is shown, then run the following (in another console):
 $ grunt serve 
 ```
 
-That will start a proxy of local server at [http:localhost:3000](http:localhost:3000) and open a new browser tab.
+That will start a proxy of local server at [http://localhost:3000](http://localhost:3000) and open a new browser tab.
 You can browse the application from that URL.
 
-Also check out [http:localhost:3001](http:localhost:3001). It hosts a tool named **Browser Sync**, that manages the app at [http:localhost:3000](http:localhost:3000) and provides cool features like live reload, css outlining, css overlay...
+Also check out [http://localhost:3001](http://localhost:3001). It hosts a tool named **Browser Sync**, that manages the app at [http://localhost:3000](http://localhost:3000) and provides cool features like live reload, css outlining, css overlay...
 
 # License
 
