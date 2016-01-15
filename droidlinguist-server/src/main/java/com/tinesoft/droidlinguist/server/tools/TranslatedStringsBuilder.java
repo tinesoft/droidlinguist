@@ -47,14 +47,14 @@ public class TranslatedStringsBuilder
 	private static final String STRING_TAG_END = "</string>\n";
 
 	private static final String STRING_ARRAY_TAG_START = "\t<string-array name=\"%s\">\n";
-	private static final String STRING_ARRAY_TAG_END = "</string-array>\n";
+	private static final String STRING_ARRAY_TAG_END = "\t</string-array>\n";
 
 	private static final String ITEM_QUANTITY_TAG_START = "\t\t<item quantity=\"%s\">";
 	private static final String ITEM_TAG_START = "\t\t<item>";
 	private static final String ITEM_TAG_END = "</item>\n";
 
 	private static final String PLURALS_TAG_START = "\t<plurals name=\"%s\">\n";
-	private static final String PLURALS_TAG_END = "</plurals>\n";
+	private static final String PLURALS_TAG_END = "\t</plurals>\n";
 
 	public void build(TranslationResource translation, HttpServletResponse response)
 	{
