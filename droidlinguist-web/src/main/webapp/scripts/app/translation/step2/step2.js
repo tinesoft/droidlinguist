@@ -24,14 +24,22 @@ angular.module( 'droidlinguist.translation.step2', [
   
   $scope.translators = translationService.getTranslators();
 
+  var oldTranslator = angular.copy($scope.selection.translator);
+
   $scope.goToPrevStep = function()  {
      $state.go('translation.step1');
   };
 
   $scope.goToNextStep = function() {
+    var translatorHasChanged = !angular.equals(oldTranslator, $scope.selection.translator);
+
     translationService.setTranslator($scope.selection.translator);
 
     if(translationService.isStep2Complete()){
+      if(translatorHasChanged) {
+        //reset previously uploaded strings.xml @ Step 3 (if any), to force new upload / translation
+        translationService.setSourceFile({});
+      }
       $state.go('translation.step3');
     }
     
