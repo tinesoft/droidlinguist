@@ -133,6 +133,9 @@ public class TranslatedStringsBuilder
 		boolean useXLIFF = false;
 		for (TranslationStringItem tsi : file.getStrings())
 		{
+			if (!tsi.isTranslatable())// non translatable contents should not be
+										// included
+				continue;
 
 			StringItemType type = StringItemType.getByName(tsi.getType());
 

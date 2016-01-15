@@ -150,6 +150,7 @@ angular.module('droidlinguist.translation.directives')
 					var string = {};
 					string.name = strings[j].name;
 					string.type = strings[j].type;
+					string.translatable = strings[j].translatable;
 
 					//prepare the values for each string
 					string.values = [];
