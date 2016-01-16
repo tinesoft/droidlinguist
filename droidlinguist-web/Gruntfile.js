@@ -491,6 +491,11 @@ module.exports = function (grunt) {
         'buildcontrol:openshift'
     ]);
 
+    grunt.registerTask('copyDeployOpenshift', [
+        'copy:generateOpenshiftDirectory',
+        'buildcontrol:openshift'
+    ]);
+
     grunt.registerTask('default', [
         'test',
         'build'
