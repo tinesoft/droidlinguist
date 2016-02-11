@@ -1,6 +1,7 @@
 angular.module( 'droidlinguistApp', [
   'droidlinguist.navigation',
   'droidlinguist.translation',
+  'droidlinguist.constants',
   'components.social',
   'components.wow',
   'ui.bootstrap',
