@@ -26,30 +26,6 @@
   100% {background-color: #f1f1f1;}
 }
 
-/*.keyframes(@start-color:#f1f1f1, @end-color:#3c9200){
-  @-webkit-keyframes changeBgColor {
-    0% {background-color: @start-color;}
-    100% {background-color:@end-color;}
-  }
-
-  @-moz-keyframes changeBgColor {
-    0% {background-color: @start-color;}
-    100% {background-color:@end-color;}
-  }
-
-  @-o-keyframes changeBgColor {
-    0% {background-color: @start-color;}
-    100% {background-color:@end-color;}
-  }
-
-  @keyframes changeBgColor {
-    0% {background-color: @start-color;}
-    100% {background-color:@end-color;}
-  }
-
-}
-*/
-
 .animated-highlight() {
   -webkit-animation-duration: @animationDurationTime, @animationDurationTime*4;
   -moz-animation-duration: @animationDurationTime, @animationDurationTime*4;
@@ -70,4 +46,50 @@
   -moz-animation-name: bounceIn, changeBgColor;
   -o-animation-name: bounceIn, changeBgColor;
   animation-name: bounceIn, changeBgColor;
+}
+
+.my-spin-pulse {
+  -webkit-animation: my-spin-pulse 0.5s  linear;
+  -moz-animation: my-spin-pulse 0.5s  linear;
+  -o-animation: my-spin-pulse 0.5s  linear;
+  animation: my-spin-pulse 0.5s linear;
+}
+
+
+@-webkit-keyframes my-spin-pulse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1.1);
+  }
+}
+
+@-moz-keyframes my-spin-pulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg) scale(1.1);
+  }
+}
+
+
+@-o-keyframes my-spin-pulse {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(360deg) scale(1.1);
+  }
+}
+
+
+@keyframes my-spin-pulse {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
 }

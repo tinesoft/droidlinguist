@@ -114,7 +114,7 @@ module.exports = function (grunt) {
                         "main": ['less/flag-icon.less']
                     },
                     "animate.less":{
-                        "main" : ['source/animated.less', 'source/shake.less',
+                        "main" : ['source/animated.less', 'source/pulse.less', 'source/shake.less',
                                   'source/fadeInUp.less', 'source/fadeOutLeft.less',
                                   'source/bounceIn.less', 'source/bounceOut.less',
                                   'source/bounceInLeft.less', 'source/bounceInRight.less']

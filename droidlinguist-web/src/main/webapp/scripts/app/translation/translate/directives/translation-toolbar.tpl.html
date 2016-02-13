@@ -1,46 +1,52 @@
-<form class="navbar-form translation-toolbar" role="toolbar">
-	<label class="btn btn-default btn-download" uib-tooltip="Download the translation files." 
+<div class="btn-toolbar translation-toolbar" role="toolbar">
+	<label class="navbar-btn navbar-left btn btn-primary btn-download" uib-tooltip="Download the translation files." 
 		ng-click="download()"><i class="fa fa-download fa-lg"></i>
 	</label>
-	<label class="btn btn-default btn-prev" uib-tooltip="Moves to the previous source phrase."
-		ng-click="moveToPrevSource()">
-		<i class="fa icon-arrow-left fa-lg"></i>
-	</label>
-	<label class="btn btn-default btn-next" uib-tooltip="Moves to the next source phrase."
-		ng-click="moveToNextSource()">
-		<i class="fa icon-arrow-right fa-lg"></i>
-	</label>
+	<div class="btn-group">
+		<label class="navbar-btn btn btn-default btn-prev" uib-tooltip="Moves to the previous source phrase."
+			ng-click="moveToPrevSource()">
+			<i class="fa icon-arrow-left fa-lg"></i>
+		</label>
+		<label class="navbar-btn btn btn-default btn-next" uib-tooltip="Moves to the next source phrase."
+			ng-click="moveToNextSource()">
+			<i class="fa icon-arrow-right fa-lg"></i>
+		</label>
+	</div>
+
 	<!--
-	<label class="btn btn-default" uib-tooltip="Moves to the previous unfinished source phrase."
+	<label class="navbar-btn btn btn-default" uib-tooltip="Moves to the previous unfinished source phrase."
 		ng-click="moveToPrevUnfinishedSource()">
 		<i class="fa icon-checkmark-arrow-left fa-lg"></i>
 	</label>
-	<label class="btn btn-default" uib-tooltip="Moves to the next unfinished source phrase."
+	<label class="navbar-btn btn btn-default" uib-tooltip="Moves to the next unfinished source phrase."
 		ng-click="moveToNextUnfinishedSource()">
 		<i class="fa icon-question-arrow-left fa-lg"></i>
 	</label>
-	<label class="btn btn-default" uib-tooltip="Marks the phrase as 'done' (translated) and move to the next unfinished source phrase."
+	<label class="navbar-btn btn btn-default" uib-tooltip="Marks the phrase as 'done' (translated) and move to the next unfinished source phrase."
 		ng-click="markAsTranslated()">
 		<i class="fa icon-question-arrow-right fa-lg"></i>
 	</label>
 	-->
-	<label class="btn btn-default btn-validate" uib-tooltip="Marks all the phrases as 'done' (translated)."
-		ng-click="markAllAsValidated()">
-		<i class="fa icon-checkmark-double fa-lg"></i>
-	</label>
-	<label class="btn btn-default btn-reject" uib-tooltip="Marks all the phrases as 'undone' (rejected)."
-		ng-click="markAllAsRejected()">
-		<i class="fa icon-cross-double fa-lg"></i>
-	</label>
-
-	<label class="btn btn-default  btn-val-punctuation" ng-model="options.punctuationValidation" 
-		   uib-btn-checkbox uib-tooltip="Toggles phrase ending punctuation validation on and off."
-		   ng-click="toggleEndingPunctuationValidation()">
-		<i class="fa icon-checkmark-pilcrow fa-lg"></i>
-	</label>
-	<label class="btn btn-default btn-val-placemarker" ng-model="options.placemarkerValidation" 
-		   uib-btn-checkbox uib-tooltip="Toggles place marker validation on or off."
-		   ng-click="togglePlacemarkerValidation()">
-		<i class="fa icon-checkmark-percent fa-lg"></i>
-	</label>
-</form>
+	<div class="btn-group">
+		<label class="navbar-btn btn btn-default btn-validate" uib-tooltip="Marks all the phrases as 'done' (translated)."
+			ng-click="markAllAsValidated()">
+			<i class="fa icon-checkmark-double fa-lg"></i>
+		</label>
+		<label class="navbar-btn btn btn-default btn-reject" uib-tooltip="Marks all the phrases as 'undone' (rejected)."
+			ng-click="markAllAsRejected()">
+			<i class="fa icon-cross-double fa-lg"></i>
+		</label>
+	</div>
+	<div class="btn-group">
+		<label class="navbar-btn btn btn-default  btn-val-punctuation" ng-model="options.punctuationValidation" 
+			   uib-btn-checkbox uib-tooltip="Toggles phrase ending punctuation validation on and off."
+			   ng-click="toggleEndingPunctuationValidation()">
+			<i class="fa icon-checkmark-pilcrow fa-lg"></i>
+		</label>
+		<label class="navbar-btn btn btn-default btn-val-placemarker" ng-model="options.placemarkerValidation" 
+			   uib-btn-checkbox uib-tooltip="Toggles place marker validation on or off."
+			   ng-click="togglePlacemarkerValidation()">
+			<i class="fa icon-checkmark-percent fa-lg"></i>
+		</label>
+	</div>
+</div>

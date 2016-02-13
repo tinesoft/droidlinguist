@@ -5,6 +5,38 @@
     background-color: #e7e7e7;
 }
 
+.navbar {
+  font-weight: 700;
+  a:focus {
+    outline: none;
+  }
+  .navbar-brand{
+    font-family: "Amaranth", @font-family-sans-serif;
+
+    &:hover{
+      .animated();
+      .pulse();
+    }
+  }
+  .navbar-nav {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    li {
+      a {
+        transition: background .3s ease,color .3s ease;
+        -webkit-transition: background .3s ease,color .3s ease;
+
+        &:focus {
+          outline: none;
+        }
+        &:hover i{
+          .my-spin-pulse();
+        }
+      }
+    }
+  }
+}
+
 .jumbotron {
     padding: 40px 15px 40px;
     font-size: 16px;
@@ -22,8 +54,9 @@
       font-weight: normal;
     }
     h1 {
-      .text-left();
+      font-family: "Amaranth", @font-family-sans-serif;
       color: #fff;
+      .text-left();
     }
     p {
       .text-left();
