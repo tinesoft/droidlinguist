@@ -5,7 +5,7 @@ Client-side components for **droidlinguist**, a tool that helps you easily trans
 
 # Features & Demo
 
-[DEMO](http://droidlinguist-tinesoft.rhcloud.com/)
+[DEMO](https://droidlinguist.io)
 
 
 

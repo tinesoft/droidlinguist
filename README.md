@@ -5,7 +5,7 @@ A tool that helps you easily translate your killer android apps in a nice & clea
 
 # Features & Demo
 
-[DEMO](http://droidlinguist-tinesoft.rhcloud.com/)
+[DEMO](https://droidlinguist.io)
 
 ![DroidLinguit Screenshot](/droidlinguist-web/src/main/webapp/assets/images/screenshot-translate.png)
 

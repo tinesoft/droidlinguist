@@ -30,7 +30,7 @@ angular.module( 'droidlinguistApp', [
   
   //social media settings
   $scope.website = {
-    url: 'http://droidlinguist-tinesoft.rhcloud.com/',
+    url: 'https://droidlinguist.io',
     title : 'DroidLinguist',
     description : 'A tool that helps you easily i18nalize your killer android apps!'
   };
