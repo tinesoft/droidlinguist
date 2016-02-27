@@ -19,6 +19,13 @@ spring:
         livereload:
             enabled: false # we use Grunt + BrowserSync for livereload
 
+
+    messages:
+        cache-seconds: 1
+    thymeleaf:
+        cache: false
+
+
 server:
     address: localhost
     port: 8080

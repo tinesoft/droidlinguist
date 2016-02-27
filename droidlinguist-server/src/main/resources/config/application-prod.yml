@@ -19,6 +19,13 @@ spring:
         livereload:
             enabled: false
 
+
+
+
+
+    thymeleaf:
+        cache: true
+
 server:
     address: localhost
     port: 8080

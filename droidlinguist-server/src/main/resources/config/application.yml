@@ -14,12 +14,13 @@
 spring:
     application:
         name: droidlinguist
+    messages:
+        basename: classpath:/i18n/messages
     mvc:
         favicon:
             enabled: false
-security:
-    basic:
-        enabled: false
+    thymeleaf:
+        mode: XHTML
 
 # File Upload
 multipart:
