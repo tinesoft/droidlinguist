@@ -213,8 +213,7 @@
 						<groupId>org.springframework.boot</groupId>
 						<artifactId>spring-boot-maven-plugin</artifactId>
 						<configuration>
-							<!-- set to false to avoid deployement failures on some paas/iaas -->
-							<executable>false</executable>
+							<executable>true</executable>
 							<arguments>
 								<argument>--spring.profiles.active=prod</argument>
 							</arguments>
