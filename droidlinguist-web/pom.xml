@@ -14,7 +14,7 @@
 
 	<properties>
 		<start-class>com.tinesoft.droidlinguist.server.DroidLinguistApplication</start-class>
-		<tomcat.version>8.0.9</tomcat.version>
+		<tomcat.version>8.0.32</tomcat.version>
 	</properties>
 
 	<build>
