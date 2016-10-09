@@ -226,5 +226,68 @@
 				<logback.loglevel>INFO</logback.loglevel>
 			</properties>
 		</profile>
+		<profile>
+            <!--fast prod profile: skip npm and bower install, and do not clean 'node_modules' folder-->
+            <id>prod-fast</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </dependency>
+            </dependencies>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.github.trecloux</groupId>
+                        <artifactId>yeoman-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>run-frontend-build</id>
+                                <phase>generate-resources</phase>
+                                <goals>
+                                    <goal>build</goal>
+                                </goals>
+                                <configuration>
+                                    <buildTool>grunt</buildTool>
+                                    <buildArgs>build --force --no-color</buildArgs>
+                                    <npmInstallArgs>--version</npmInstallArgs>
+                                    <bowerInstallArgs>--version</bowerInstallArgs>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <yeomanProjectDirectory>${project.basedir}</yeomanProjectDirectory>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <artifactId>maven-clean-plugin</artifactId>
+                        <configuration>
+                            <filesets>
+                                <fileset>
+                                    <directory>src/main/webapp/dist</directory>
+                                </fileset>
+                                <fileset>
+                                    <directory>.tmp</directory>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
+                        <configuration>
+                            <executable>true</executable>
+                            <arguments>
+                                <argument>--spring.profiles.active=prod</argument>
+                            </arguments>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+            <properties>
+                <!-- log configuration -->
+                <logback.loglevel>INFO</logback.loglevel>
+            </properties>
+        </profile>
 	</profiles>
 </project>
